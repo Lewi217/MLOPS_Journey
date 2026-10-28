@@ -3,9 +3,9 @@ from pydantic import BaseModel, ConfigDict, Field
 
 
 class SampleRequest(BaseModel):
-    name: str = Field(..., min_length=2, max_length=50, description="Name of the sample entity")
-    description: Optional[str] = Field(None, max_length=200, description="Optional description")
-    value: float = Field(..., ge=0, description="Non-negative numeric value")
+    name: str = Field(..., min_length=2, max_length=50)
+    description: Optional[str] = Field(None, max_length=200)
+    value: float = Field(..., ge=0)
 
 
 class SampleResponse(BaseModel):

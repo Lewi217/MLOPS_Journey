@@ -27,6 +27,7 @@ services:
       - .env
     environment:
       REDIS_URL: redis://redis:6379/0
+      BEIWATCH_TRAIN_CUTOFF: "2016-01"
     ports:
       - "8000:8000"
     depends_on:

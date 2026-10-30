@@ -1,0 +1,10 @@
+fastapi[standard]>=0.115.0
+pydantic-settings>=2.0.0
+sqlalchemy[asyncio]>=2.0.0
+asyncpg>=0.30.0
+redis[asyncio]>=5.0.0
+uvicorn[standard]>=0.32.0
+pandas>=3.1.0,<4
+numpy>=2.0,<3
+scikit-learn>=1.5,<2
+prometheus-client>=0.20.0

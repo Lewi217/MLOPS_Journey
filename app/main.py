@@ -58,7 +58,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from app.features.forecast.router import router as forecast_router
+
 app.include_router(api_router, prefix=settings.API_V1_STR)
+app.include_router(forecast_router)
 
 
 @app.exception_handler(BaseAppException)
